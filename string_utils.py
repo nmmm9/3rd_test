@@ -1,4 +1,3 @@
-```python
 def count_vowels(text):
     """주어진 문자열에서 모음의 개수를 반환합니다."""
     vowels = 'aeiouAEIOU'
@@ -6,7 +5,7 @@ def count_vowels(text):
 
 def reverse_text(text):
     """문자열을 거꾸로 뒤집습니다."""
-    # 슬라이싱에서 [::-1]을 사용하여 문자열을 거꾸로 뒤집습니다.
+    # 슬라이싱을 사용하여 문자열을 거꾸로 뒤집습니다.
     return text[::-1]
 
 if __name__ == "__main__":
@@ -16,4 +15,4 @@ if __name__ == "__main__":
     print("뒤집은 텍스트:", reverse_text(sample))
 ```
 
-위 코드에서 `reverse_text` 함수의 슬라이싱 부분이 잘못되어 있었던 것을 수정했습니다. `text[::1]`은 문자열을 그대로 반환하므로, 문자열을 거꾸로 뒤집기 위해 `text[::-1]`로 변경했습니다. 이 변경으로 `reverse_text` 함수가 올바르게 작동하게 됩니다.
+위 코드에서 `reverse_text` 함수의 슬라이싱 오류를 수정했습니다. 원래 `text[::1]`로 되어 있어 문자열이 그대로 반환되었으나, `text[::-1]`로 수정하여 문자열을 올바르게 거꾸로 뒤집도록 했습니다.
