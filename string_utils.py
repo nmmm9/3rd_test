@@ -6,7 +6,7 @@ def count_vowels(text):
 
 def reverse_text(text):
     """문자열을 거꾸로 뒤집습니다."""
-    return text[::-1]
+    return text[::1]
 
 if __name__ == "__main__":
     sample = "Hello GitHub!"
